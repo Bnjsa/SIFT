@@ -1,0 +1,83 @@
+body{
+    background-color: #001526;
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*header de bolsa*/
+    #bolsa {
+        background-color: #1a1a1a; /* Fondo oscuro típico de bolsas */
+        color: #f0f0f0; /* Texto claro */
+        overflow: hidden; /* Oculta el contenido que se desborda horizontalmente */
+        padding: 10px 0; /* Espaciado vertical */
+        font-family: sans-serif;
+        font-size: 0.9em;
+        white-space: nowrap; /* Evita que los elementos se envuelvan */
+      }
+      
+      .ticker-container {
+        display: inline-block; /* Permite que el contenido se ajuste al ancho */
+        padding-left: 100%; /* Empieza fuera de la pantalla a la derecha */
+        animation: ticker 15s linear infinite; /* Animación de desplazamiento */
+      }
+      
+      .ticker-item {
+        display: inline-block; /* Muestra los elementos en línea */
+        margin-right: 30px; /* Espacio entre los elementos */
+      }
+      
+      .simbolo {
+        font-weight: bold;
+        margin-right: 5px;
+      }
+      
+      .precio {
+        margin-right: 5px;
+      }
+      
+      .cambio {
+        font-weight: bold;
+      }
+      
+      .positivo {
+        color: #4CAF50; /* Verde para indicar alza */
+      }
+      
+      .negativo {
+        color: #f44336; /* Rojo para indicar baja */
+      }
+      
+      /* Animación de desplazamiento horizontal */
+      @keyframes ticker {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }

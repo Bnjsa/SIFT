@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+    <header></header>
   <title>Sift Mariana - Inicio</title>
   <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+  <link rel="stylesheet" href="../css/styles.css">
+
 </head>
 <body>
+    <header id="bolsa">
+
+        <h1>Sistema Integral de Finanza y Tesoreria</h1>
+        <p> version 06My25 - 4.1.0 - Mariana</p>
+
+<br>
+          <div class="ticker-container">
+            <div class="ticker-item">
+              <span class="simbolo">USD</span>
+              <span class="precio">170.34</span>
+              <span class="cambio positivo">+1.25</span>
+            </div>
+            <div class="ticker-item">
+              <span class="simbolo">GOOG</span>
+              <span class="precio">2750.80</span>
+              <span class="cambio negativo">-5.60</span>
+            </div>
+            <div class="ticker-item">
+              <span class="simbolo">AMZN</span>
+              <span class="precio">165.10</span>
+              <span class="cambio positivo">+2.15</span>
+            </div>
+            <div class="ticker-item">
+              <span class="simbolo">TSLA</span>
+              <span class="precio">185.55</span>
+              <span class="cambio negativo">-3.00</span>
+            </div>
+            </div>
+        </header>
   <h1>Registrar perdidas</h1>
   <form id="movForm">
     <select id="tipo">
