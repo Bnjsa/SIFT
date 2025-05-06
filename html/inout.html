@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sift Mariana - Inicio</title>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+</head>
+<body>
+  <h1>Ingresos y egresos</h1>
+  <form id="movForm">
+    <select id="tipo">
+      <option value="ingreso">Ingreso</option>
+      <option value="egreso">Egreso</option>
+    </select>
+
+    <h3>Pesos</h3>
+    <input type="number" id="monto" placeholder="Monto" required>
+    <h3>Dollars</h3>
+    <input type="number" id="monto" placeholder="Monto" required>
+
+    <h3>Bitcoin</h3>
+    <input type="number" id="monto" placeholder="Monto" required>
+    <h3>Ethereum</h3>
+    <input type="number" id="monto" placeholder="Monto" required>
+
+    <h2></h2>
+    <h3>Pesos</h3>
+    <input type="number" id="monto" placeholder="Monto" required>
+    <h3>Dollars</h3>
+    <input type="number" id="monto" placeholder="Monto" required>
+
+
+
+   
+    <button type="submit">Guardar</button>
+  </form>
+
+  <h2>Saldo Actual</h2>
+  <p id="saldo">Cargando...</p>
+
+  <a href="../index.html">Volver</a>
+
+  <script src="../js/firebase.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

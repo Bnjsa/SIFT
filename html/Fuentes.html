@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sift Mariana - Inicio</title>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+</head>
+<body>
+  <h1>Entidades</h1>
+ 
+
+    <h3>Crear</h3>
+    <p>Nombre</p>
+    <input type="text" id="name" placeholder="Name" required>
+<br>
+<p>Valor inicial</p>
+<input type="number" id="monto" placeholder="Monto" required>
+<br>
+
+    <button type="submit">Guardar</button>
+  </form>
+
+  <h2>Saldo Actual</h2>
+  <p id="saldo">Cargando...</p>
+
+  <a href="../index.html">Volver</a>
+
+  <script src="../js/firebase.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

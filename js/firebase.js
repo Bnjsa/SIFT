@@ -1,12 +1,16 @@
-// Sustituye con tus datos de Firebase
+// firebase-config.js
 const firebaseConfig = {
-  apiKey: "TU_API_KEY",
-  authDomain: "TU_PROJECT.firebaseapp.com",
-  projectId: "TU_PROJECT",
-  storageBucket: "TU_PROJECT.appspot.com",
-  messagingSenderId: "1234567890",
-  appId: "1:1234567890:web:abc123"
+  apiKey: "AIzaSyDXnjZwlqH7hheBJpBVQEKEVtKy7RIm5c4",
+  authDomain: "sift-3faf2.firebaseapp.com",
+  projectId: "sift-3faf2",
+  storageBucket: "sift-3faf2.appspot.com",
+  messagingSenderId: "295804083362",
+  appId: "1:295804083362:web:65b982f53eb63ea5900bfb",
+  measurementId: "G-MG3FWPS1NJ"
 };
 
+// Inicializar Firebase
 firebase.initializeApp(firebaseConfig);
+
+// Inicializar Firestore
 const db = firebase.firestore();
