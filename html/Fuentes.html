@@ -4,24 +4,46 @@
   <title>Sift Mariana - Inicio</title>
   <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+  <style>
+    table, th, td {
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+  </style>
 </head>
 <body>
   <h1>Entidades</h1>
- 
 
-    <h3>Crear</h3>
+  <h3>Crear</h3>
+  <form id="entidadForm">
     <p>Nombre</p>
-    <input type="text" id="name" placeholder="Name" required>
-<br>
-<p>Valor inicial</p>
-<input type="number" id="monto" placeholder="Monto" required>
-<br>
-
+    <input type="text" id="name" placeholder="Name" required><br>
+    <p>Valor inicial</p>
+    <input type="number" id="monto" step="any" placeholder="Monto" required><br>
+    <p>Tipo</p>
+    <select id="tipo">
+      <option value="MXN">Pesos</option>
+      <option value="USD">Dólares</option>
+      <option value="Cripto">Cripto</option>
+      <option value="Capital">Capital</option>
+    </select><br><br>
     <button type="submit">Guardar</button>
   </form>
 
-  <h2>Saldo Actual</h2>
-  <p id="saldo">Cargando...</p>
+  <h2>Listado de Entidades</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Monto</th>
+        <th>Tipo</th>
+      </tr>
+    </thead>
+    <tbody id="tablaEntidades">
+      <!-- Aquí se agregan filas con JS -->
+    </tbody>
+  </table>
 
   <a href="../index.html">Volver</a>
 

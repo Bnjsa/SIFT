@@ -9,8 +9,5 @@ const firebaseConfig = {
   measurementId: "G-MG3FWPS1NJ"
 };
 
-// Inicializar Firebase
 firebase.initializeApp(firebaseConfig);
-
-// Inicializar Firestore
-const db = firebase.firestore();
+window.db = firebase.firestore(); // Declaración global

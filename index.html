@@ -4,7 +4,7 @@
   <title>Sift Mariana - Inicio</title>
   <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
- 
+
 
 </head>
 <body>
@@ -14,7 +14,7 @@
       <option value="ingreso">Ingreso</option>
       <option value="egreso">Egreso</option>
     </select>
-    <input type="number" id="monto" placeholder="Monto" required>
+    <input type="number" id="monto" step="any" placeholder="Monto" required>
     <select id="moneda">
       <option value="MXN">Pesos</option>
       <option value="USD">Dólares</option>
@@ -23,7 +23,7 @@
   </form>
 
   <h2>Saldo Actual</h2>
-  <p id="saldo">Cargando...</p>
+  <p id="saldoMov">Cargando...</p>
 
   <h2>Reportar Perdidas</h2>
   <a href="html/perdidas.html">Cambio</a>
